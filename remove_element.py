@@ -3,7 +3,7 @@ val = 3
 k = 0
 for i in range(0,len(nums)):
     if nums[i] != val:
-        nums[k] = nums[i]
+        nums[k],nums[i] = nums[i],nums[k]
         k += 1
 print(k)
 
