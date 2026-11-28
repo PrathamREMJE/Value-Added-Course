@@ -1,26 +1,5 @@
-arr = [100,101,100,100,102,101,100]
-freq = [0] * 4
-
+arr=[910,910,920,920,920, 930, 930, 930, 940, 950,910, 960, 950, 960, 940, 990, 980, 980, 970, 970, 1000, 1000, 1000, 1000]
+freq_arr = [0] * 101
 for i in arr:
-    freq[i-100] += 1
-    
-print(freq)
-
-for i in range(0,len(freq)):
-    print([i+100], "occurs", freq[i], "times")
-
-
-indices_arr = [-4,-2,-1,0,-2,1,3,-4]
-
-freq = [0] * 5
-
-for i in indices_arr:
-    pass
-
-# freq = {}
-# for num in arr:
-#     if num in freq:
-#         freq[num] += 1
-#     else:
-#         freq[num] = 1
-# print(freq)
+    freq_arr[i-900] += 1
+print(freq_arr)
